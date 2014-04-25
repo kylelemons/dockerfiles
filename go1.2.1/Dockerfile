@@ -21,4 +21,4 @@ RUN apt-get install -y build-essential mercurial git-core subversion wget
 # Compile Go
 RUN hg clone -r $GOVER http://code.google.com/p/go /d/go
 WORKDIR /d/go/src
-RUN bash all.bash
+RUN bash make.bash
