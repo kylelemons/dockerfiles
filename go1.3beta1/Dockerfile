@@ -9,7 +9,7 @@ ENV GOPATH /d/gopath
 ENV PATH /d/go/bin:/d/gopath/bin:$PATH
 
 # Create directories
-RUN mkdir -p ${HOME} /d/go /d/gopath
+RUN mkdir -p /root /d/go /d/gopath
 
 # Save the Dockerfile
 ADD Dockerfile /.dockerfile
