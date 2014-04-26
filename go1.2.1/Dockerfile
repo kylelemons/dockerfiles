@@ -22,3 +22,6 @@ RUN apt-get install -y build-essential mercurial git-core subversion wget
 RUN hg clone -r $GOVER http://code.google.com/p/go /d/go
 WORKDIR /d/go/src
 RUN bash make.bash
+
+# Set the normal working directory to gopath
+WORKDIR /d/gopath
